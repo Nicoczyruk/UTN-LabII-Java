@@ -53,10 +53,13 @@ public class Main {
                     } else if (op == 3) {
                         System.out.print("Ingrese nombre del empleado: ");
                         String nombre = s.next();
+
                         System.out.print("Ingrese identificacion: ");
                         int id = s.nextInt();
+
                         System.out.print("Ingrese sueldo base: ");
                         double sueldoB = s.nextDouble();
+
                         System.out.print("Ingrese el valor de las ventas realizadas: ");
                         double ventas = s.nextDouble();
 
@@ -66,6 +69,7 @@ public class Main {
 
                         Empleado Nempleado = new EmpleadoComision(nombre, id, sueldoB, ventas); //Crea instancia y la agrega al array
                         gestor.Gestor.add(Nempleado);
+
                         System.out.println("Empleado añadido exitosamente"); //Confirmacion de que se cargo con exito el empleado
                     } else {
                         System.out.println("Error, numero ingresado incorrecto, vuelva a intentarlo");

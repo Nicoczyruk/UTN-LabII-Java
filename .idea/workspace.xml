@@ -7,6 +7,16 @@
     <list default="true" id="dc75940b-5fbc-4a66-a2ed-2ba276ff0b58" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UTN-LabII-Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/UTN-LabII-Java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/CursoJava/Excepciones/LongitudDelNumero.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/CursoJava/Excepciones/excepciones08ExcepcionesPropias.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Holamundo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Holamundo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/MiprimerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/MiprimerRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Empleado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/EmpleadoAsalariado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/EmpleadoAsalariado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/GestorEmpleados.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/GestorEmpleados.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SistemaGestionEmpleados/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SistemaGestionEmpleados/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +126,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "E:/UTN-LabII-Java",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
+    "settings.editor.splitter.proportion": "0.2925586"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\UTN-LabII-Java\src\BaseDeDatos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Estudiantes">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -131,10 +155,38 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
+    <configuration name="Estudiantes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BaseDeDatos.Estudiantes" />
+      <module name="UTN-LabII-Java" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BaseDeDatos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExcepcionesPropias" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExcepcionesPropias" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeerArchivos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Archivos.LeerArchivos" />
+      <module name="UTN-LabII-Java" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Archivos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,34 +198,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="SistemaGestionEmpleados.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Principal (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CursoJava.ArrayList.Principal" />
-      <module name="UTN-LabII-Java" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CursoJava.ArrayList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Principal (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CursoJava.ArrayList.Principal" />
-      <module name="UTN-LabII-Java" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CursoJava.ArrayList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -227,19 +251,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Estudiantes" />
+      <item itemvalue="Application.LeerArchivos" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.ExcepcionesPropias" />
       <item itemvalue="Application.Principal (5)" />
-      <item itemvalue="Application.Principal (3)" />
-      <item itemvalue="Application.Principal (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Estudiantes" />
+        <item itemvalue="Application.LeerArchivos" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ExcepcionesPropias" />
         <item itemvalue="Application.Principal (5)" />
-        <item itemvalue="Application.Principal (4)" />
-        <item itemvalue="Application.Principal (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -294,6 +318,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
