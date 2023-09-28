@@ -10,15 +10,14 @@ public class Main {
 
         while(true) {
             System.out.println("\tSISTEMA DE GESTION DE CUENTAS"); //Menu
-            System.out.println("""
-                    1.Crear cuenta persona
-                    2.Crear cuenta empresa
-                    3.Eliminar cuenta persona
-                    4.Eliminar cuenta empresa
-                    5.Editar saldo persona
-                    6.Editar saldo cuenta
-                    7.Mostrar cuentas almacenadas
-                    8.Salir""");
+            System.out.println("1.Crear cuenta persona"+"\n"
+                    +"2.Crear cuenta empresa"+"\n"
+                    +"3.Eliminar cuenta persona"+"\n"
+                    +"4.Eliminar cuenta empresa"+"\n"
+                    +"5.Editar saldo persona"+"\n"
+                    +"6.Editar saldo cuenta"+"\n"
+                    +"7.Mostrar cuentas almacenadas"+"\n"
+                    +"8.Salir");
             System.out.print("Opcion: ");
             int opc = s.nextInt();
 

@@ -277,23 +277,19 @@ public class ConcesionariaEnUno {
         while(true) {
 
             System.out.println("-----------------CONCESIONARIA---------------");
-            System.out.println("""
-                    1.Agregar Vehiculo
-                    2.Eliminar Vehiculo
-                    3.Editar Precio Vehiculo
-                    4.Mostrar Vehiculos
-                    5.Guardar Datos
-                    6.Cargar ultima sesion
-                    7.Salir""");
+            System.out.println("1.Agregar Vehiculo"+"\n"
+                    +"2.Eliminar Vehiculo"+"\n"
+                    +"3.Editar Precio Vehiculo"+"\n"
+                    +"4.Mostrar Vehiculos"+"\n"
+                    +"5.Guardar Datos"+"\n"
+                    +"6.Cargar ultima sesion"+"\n"
+                    +"7.Salir");
             System.out.print("Opcion: ");
             int opc = scan.nextInt();
 
             switch(opc) {
                 case 1:
-                    System.out.println("""
-                            1.Moto
-                            2.Auto
-                            """);
+                    System.out.println("1.Moto"+"\n"+"2.Auto");
                     System.out.print("Opcion: ");
                     int opc1 = scan.nextInt();
 
