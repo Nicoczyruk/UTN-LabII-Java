@@ -102,6 +102,7 @@ class Habitacion implements mostrarInformacion, Serializable { //Clase habitacio
             }
         }
         System.out.println("-------------------------------------------");
+
     }
 
     //GETTERS Y SETTERS HABITACION
