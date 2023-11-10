@@ -1,7 +1,5 @@
 package Parcial1Lab;
 
-
-
 import java.io.*;
 import java.util.*;
 
@@ -45,7 +43,7 @@ interface Informacion {
     void verHistorialDeEventos();
 }
 
-class Doctor extends Persona {
+class Doctor extends Persona  {
 
     private String especialidad;
 
@@ -83,6 +81,7 @@ class Paciente extends Persona implements Informacion, Serializable {
         this.historialMedico = new ArrayList<HistorialMedico>();
 
         }
+
 
     @Override
     public void verHistorialDeEventos() {
