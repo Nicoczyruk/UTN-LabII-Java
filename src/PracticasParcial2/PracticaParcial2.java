@@ -1,33 +1,19 @@
 package PracticasParcial2;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.sql.*;
 
-abstract class Persona {
-
-    private int id;
+class Persona {
     private String nombre;
     private int edad;
 
     public Persona() {
-        this.id = 0;
         this.nombre = "DESCONOCIDO";
         this.edad = -1;
     }
 
-    public Persona(int id, String nombre, int edad) {
-        this.id = id;
+    public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNombre() {
@@ -48,23 +34,22 @@ abstract class Persona {
 }
 
 class Paciente extends Persona {
-
     private String historialMedico;
+    private int doctorCabecera;
     private String fechaIngreso;
-    private int doctorAsignado;
 
     public Paciente() {
         super();
         this.historialMedico = "DESCONOCIDO";
+        this.doctorCabecera = 0;
         this.fechaIngreso = "DESCONOCIDA";
-        this.doctorAsignado = -1;
     }
 
-    public Paciente(int id, String nombre, int edad, String historialMedico, String fechaIngreso) {
-        super(id,nombre,edad);
+    public Paciente(String nombre, int edad, String historialMedico, int doctorCabecera, String fechaIngreso) {
+        super(nombre,edad);
         this.historialMedico = historialMedico;
+        this.doctorCabecera = doctorCabecera;
         this.fechaIngreso = fechaIngreso;
-        this.doctorAsignado = -1;
     }
 
     public String getHistorialMedico() {
@@ -75,6 +60,14 @@ class Paciente extends Persona {
         this.historialMedico = historialMedico;
     }
 
+    public int getDoctorCabecera() {
+        return doctorCabecera;
+    }
+
+    public void setDoctorCabecera(int doctorCabecera) {
+        this.doctorCabecera = doctorCabecera;
+    }
+
     public String getFechaIngreso() {
         return fechaIngreso;
     }
@@ -82,27 +75,18 @@ class Paciente extends Persona {
     public void setFechaIngreso(String fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
     }
-
-    public int getDoctorAsignado() {
-        return doctorAsignado;
-    }
-
-    public void setDoctorAsignado(int doctorAsignado) {
-        this.doctorAsignado = doctorAsignado;
-    }
 }
 
 class Doctor extends Persona {
-
     private String especialidad;
 
     public Doctor() {
         super();
-        this.especialidad = "DESCONOCIDO";
+        this.especialidad = "DESCONOCIDA";
     }
 
-    public Doctor(int id, String nombre, int edad, String especialidad) {
-        super(id,nombre,edad);
+    public Doctor(String nombre, int edad, String especialidad) {
+        super(nombre, edad);
         this.especialidad = especialidad;
     }
 
@@ -113,194 +97,148 @@ class Doctor extends Persona {
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
     }
+
 }
 
 class Hospital {
-    private List<Paciente> listaPacientes;
-    private List<Doctor> listaDoctores;
-
-    public Hospital() {
-        this.listaPacientes = new ArrayList<>();
-        this.listaDoctores = new ArrayList<>();
-    }
 
     public void agregarPaciente(Paciente paciente) {
+        String consulta = "INSERT INTO `pacientes` (`id`, `nombre`, `edad`, `historial_medico`, `fecha_ingreso`, `doctor`) " +
+                "VALUES (NULL,'"+paciente.getNombre()+"','"+paciente.getEdad()+"','"+paciente.getHistorialMedico()+"','" + paciente.getFechaIngreso() + "','" + paciente.getDoctorCabecera() +"')";
 
-        listaPacientes.add(paciente);
-
-        this.guardarEnBD();
+        DBHelper.ejecutarConsulta(consulta);
+        System.out.println("Paciente ingresado correctamente!");
     }
 
-    public void mostrarPacientes(Connection conexion) {
+    public void listarPacientes() {
+        String consulta = "SELECT * FROM pacientes";
 
-        try {
-            Statement statement = conexion.createStatement();
-
-            String consulta = "SELECT * FROM pacientes";
-
-            ResultSet result = statement.executeQuery(consulta);
-
-            System.out.printf("%-5s %-10s %-7s %-15s %-12s %-15s\n", "id", "nombre", "edad", "historialMedico",
-                    "fechaIngreso", "doctorAsignado");
-            while(result.next()) {
-                int id = result.getInt("id");
-                String nombre = result.getString("nombre");
-                int edad = result.getInt("edad");
-                String historialMedico = result.getString("historial_medico");
-                String fechaIngreso = result.getString("fecha_ingreso");
-                int doctorAsignado = result.getInt("doctor");
-
-                System.out.printf("%-5d %-10s %-7d %-15s %-12s %-15d\n", id, nombre, edad, historialMedico, fechaIngreso, doctorAsignado);
-            }
-            result.close();
-            statement.close();
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
+        ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
+        listarPacientesGeneral(resultado);
     }
 
-    public void mostrarPacientesEntreFechas(String fechaInicio, String fechaFin, Connection conexion) {
+    public void listarPacientesGeneral(ResultSet resultado) {
 
-        try {
+        if (resultado != null) {
 
-            Statement statement = conexion.createStatement();
+            try {
+                System.out.println("Lista de pacientes");
+                System.out.printf("%-10s %-15s %-5s %-20s %-12s %-13s\n", "ID", "Nombre", "Edad", "Historial Médico", "Fecha Ingreso", "Doctor");
 
-            String consulta = "SELECT * FROM pacientes WHERE fecha_ingreso BETWEEN '"+fechaInicio+"' AND '"+fechaFin+"'";
+                while(resultado.next()) {
+                    int id = resultado.getInt("id");
+                    String nombre = resultado.getString("nombre");
+                    int edad = resultado.getInt("edad");
+                    String historialMedico = resultado.getString("historial_medico");
+                    String fechaIngreso = resultado.getString("fecha_ingreso");
+                    int idDoctor = resultado.getInt("doctor");
 
-            ResultSet result = statement.executeQuery(consulta);
+                    System.out.printf("%-10d %-15s %-5d %-20s %-12s %-13d\n", id, nombre, edad, historialMedico, fechaIngreso, idDoctor);
+                }
 
-            System.out.printf("%-5s %-10s %-7s %-15s %-12s %-15s\n", "id", "nombre", "edad", "historialMedico",
-                    "fechaIngreso", "doctorAsignado");
-            while(result.next()) {
-                int id = result.getInt("id");
-                String nombre = result.getString("nombre");
-                int edad = result.getInt("edad");
-                String historialMedico = result.getString("historial_medico");
-                String fechaIngreso = result.getString("fecha_ingreso");
-                int doctorAsignado = result.getInt("doctor");
-
-                System.out.printf("%-5d %-10s %-7d %-15s %-12s %-15d\n", id, nombre, edad, historialMedico, fechaIngreso, doctorAsignado);
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-
-            statement.close();
-            result.close();
-
-        } catch (SQLException e) {
-
-            e.printStackTrace();
+        }else {
+            System.out.println("Error, no se recibieron resultados");
         }
     }
 
-    public void eliminarPaciente(String nombrePaciente) {
+    public void listarPacientesEntreFechas(String fecha1, String fecha2) {
 
-        for (Paciente p : listaPacientes) {
-
-            if (p.getNombre().equals(nombrePaciente)) {
-                listaPacientes.remove(p);
-                break;
-            }
-        }
-        this.guardarEnBD();
-
+        String consulta = "SELECT * FROM pacientes WHERE fecha_ingreso BETWEEN '"+fecha1+"' AND '"+fecha2+"';";
+        ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
+        listarPacientesGeneral(resultado);
 
     }
 
-    public void guardarEnBD() {
-        String url = "jdbc:mysql://localhost:3306/hospital";
-        String usuario = "root";
-        String pass = "";
+    public void asignarDoctorCabecera(String nombreDoctor, String nombrePaciente) {
+
+        String consulta = "UPDATE pacientes SET doctor = (SELECT id FROM doctores WHERE nombre = '"+nombreDoctor+"') WHERE nombre = '"+nombrePaciente+"'";
+
+        DBHelper.ejecutarConsulta(consulta);
+        System.out.println("Doctor asignado correctamente!");
+    }
+
+    public void eliminarPaciente(String nombre) {
+
+        String consulta = "DELETE FROM `pacientes` WHERE `pacientes`.`nombre` = '"+nombre+"'";
+        DBHelper.ejecutarConsulta(consulta);
+
+        System.out.println("Eliminación exitosa!");
+    }
+
+}
+
+class DBHelper {
+    private static final String URL = "jdbc:mysql://localhost:3306/hospital";
+    private static final String USER = "root";
+    private static final String PASSWORD = "";
+
+    // Método para ejecutar una consulta sin devolver resultados
+    public static void ejecutarConsulta(String consulta) {
         try {
+            // Establecer la conexión con la base de datos
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
 
-            Connection conexion = DriverManager.getConnection(url,usuario,pass);
-            PreparedStatement statement;
-
-            // Insertar doctores
-            for (Doctor doctor : listaDoctores) {
-                String consultaDoctor = "INSERT INTO doctores (id, nombre, edad, especialidad) VALUES (DEFAULT, ?, ?, ?)";
-                statement = conexion.prepareStatement(consultaDoctor);
-
-                statement.setString(1, doctor.getNombre());
-                statement.setInt(2, doctor.getEdad());
-                statement.setString(3, doctor.getEspecialidad());
+            // Crear la declaración
+            try (PreparedStatement statement = connection.prepareStatement(consulta)) {
+                // Ejecutar la consulta
                 statement.executeUpdate();
-
             }
 
-            // Insertar pacientes
-            for (Paciente paciente : listaPacientes) {
-                String consultaPaciente = "INSERT INTO pacientes (id, nombre, edad, historial_medico, fecha_ingreso, doctor) VALUES (DEFAULT, ?, ?, ?, ?, ?)";
-                statement = conexion.prepareStatement(consultaPaciente);
-
-                statement.setString(1, paciente.getNombre());
-                statement.setInt(2, paciente.getEdad());
-                statement.setString(3, paciente.getHistorialMedico());
-                statement.setString(4, paciente.getFechaIngreso());
-                statement.setInt(5, paciente.getDoctorAsignado());
-                statement.executeUpdate();
-
-            }
-
-            conexion.close();
+            // Cerrar la conexión
+            connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    public List<Paciente> getListaPacientes() {
-        return listaPacientes;
-    }
+    // Método para ejecutar una consulta y devolver un conjunto de resultados
+    public static ResultSet ejecutarConsultaConResultado(String consulta) {
+        try {
+            // Establecer la conexión con la base de datos
+            Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
 
-    public void setListaPacientes(List<Paciente> listaPacientes) {
-        this.listaPacientes = listaPacientes;
-    }
+            // Crear la declaración
+            PreparedStatement statement = connection.prepareStatement(consulta);
 
-    public List<Doctor> getListaDoctores() {
-        return listaDoctores;
+            // Ejecutar la consulta y devolver el conjunto de resultados
+            return statement.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
-
-    public void setListaDoctores(List<Doctor> listaDoctores) {
-        this.listaDoctores = listaDoctores;
-    }
-
 
 }
 
 
 public class PracticaParcial2 {
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
-            String url = "jdbc:mysql://localhost:3306/hospital";
-            String usuario = "root";
-            String pass = "";
 
-            Hospital hospital = new Hospital();
+        Hospital hospital = new Hospital();
 
-            Paciente p1 = new Paciente(1,"pedro",50,"Abandonado","2010-09-21");
-            Doctor d1 = new Doctor(1,"Juan",30,"Cardiologo");
+        Paciente p1 = new Paciente("Pedro",25,"Cancer",-1,"1999-05-10");
 
-            Paciente p2 = new Paciente(2,"Selmo",50,"Abandonado","2010-09-21");
-            Doctor d2 = new Doctor(2,"Juancito",30,"Cardiologo");
+        //hospital.agregarPaciente(p1);
 
-            hospital.agregarPaciente(p1);
-            hospital.getListaDoctores().add(d1);
+        //hospital.listarPacientes();
 
-            String fechaInicio = "2023-01-20";
-            String fechaFin = "2023-05-20";
+        //hospital.asignarDoctorCabecera("Doctor2","Juan");
 
-            try {
-                Connection conexion = DriverManager.getConnection(url,usuario,pass);
+        //String fechaDesde = "2010-01-01";
+        //String fechaHasta = "2010-12-01";
 
-                hospital.guardarEnBD();
+        //hospital.listarPacientesEntreFechas(fechaDesde,fechaHasta);
+
+        //hospital.eliminarPaciente("Paciente1");
 
 
 
-            } catch (SQLException e) {
 
-                e.printStackTrace();
-            }
-        }
+
+    }
 }
-

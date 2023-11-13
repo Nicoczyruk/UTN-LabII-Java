@@ -5,69 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc75940b-5fbc-4a66-a2ed-2ba276ff0b58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Contacto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Contacto.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pacientes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Pacientes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Archivos/LeerArchivos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Archivos/LeerArchivos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/BaseDeDatos/Estudiantes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/BaseDeDatos/Estudiantes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/BaseDeDatos/Estudiantes2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/BaseDeDatos/Estudiantes2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/CursoJava/BasesDeDatos/BaseDeDatos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/CursoJava/BasesDeDatos/BaseDeDatos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/CursoJava/BasesDeDatos/BaseDeDatos2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/CursoJava/BasesDeDatos/BaseDeDatos2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Habitacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Habitacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Hotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Hoteleria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Hoteleria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Huesped.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Huesped.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/MostrarInformacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/MostrarInformacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Examenes/Persona.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/ExcepcionesPropias.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/ExcepcionesPropias.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/Cuenta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/Cuenta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/CuentaPersona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/CuentaPersona.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/CuentaSociedad.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/CuentaSociedad.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/GestorCuentas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/GestorCuentas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/GestionCuentas/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Habitacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Habitacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Holamundo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Holamundo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Hotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Huesped.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Huesped.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/MiprimerRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/MiprimerRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/MostrarInformacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/MostrarInformacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Doctor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/HistorialMedico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/HistorialMedico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Hospital.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Hospital.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Informacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Informacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Paciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Paciente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Parcial1Perrando.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Parcial1Lab/Persona.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Persona.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Coche.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Coche.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Concesionaria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Concesionaria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/ConcesionariaEnUno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/ConcesionariaEnUno.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Moto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Moto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Serializar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Serializar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Vehiculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcial1/Vehiculo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcialHotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticaParcialHotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Habitacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Habitacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Hotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Huesped.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Huesped.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Metodos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Metodos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/Persona.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/PracticaParcialHoteleria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/PracticaParcialHoteleria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/mostrarInformacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Practicas/mostrarInformacion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Recursion/DivisionconResta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Recursion/DivisionconResta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Recursion/Factorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Recursion/Factorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Recursion/Sumatoria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/Recursion/Sumatoria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Empleado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/EmpleadoAsalariado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/EmpleadoAsalariado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/EmpleadoComision.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/EmpleadoComision.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/EmpleadoPorHoras.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/EmpleadoPorHoras.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/GestorEmpleados.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/GestorEmpleados.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/HorasTrabajadasExcepcion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/HorasTrabajadasExcepcion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Impuesto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Impuesto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/VentasExcedidasExcepcion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/SistemaGestionEmpleados/VentasExcedidasExcepcion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/rangoNumeros.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/rangoNumeros.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parcial1Lab/Parcial1Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parcial1Lab/Parcial1Hospital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PracticasParcial2/ModeloParcial2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PracticasParcial2/ModeloParcial2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PracticasParcial2/PracticaParcial2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +142,7 @@
       <recent name="E:\UTN-LabII-Java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PracticaParcial2">
+  <component name="RunManager" selected="Application.PracticaParcial2 (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -223,13 +164,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Parcial1Hospital" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Parcial1Lab.Parcial1Hospital" />
+    <configuration name="PracticaParcial2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Parcial1Lab.*" />
+          <option name="PATTERN" value="PracticasParcial2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -237,13 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Parcial1Perrando (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Parcial1Lab.Parcial1Perrando" />
+    <configuration name="PracticaParcial2 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Parcial1Lab.*" />
+          <option name="PATTERN" value="PracticasParcial2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -251,13 +192,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Parcial1Perrando (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Parcial1Lab.Parcial1Perrando" />
+    <configuration name="PracticaParcial2 (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Parcial1Lab.*" />
+          <option name="PATTERN" value="PracticasParcial2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -311,19 +252,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.PracticaParcial2 (1)" />
+      <item itemvalue="Application.PracticaParcial2 (2)" />
+      <item itemvalue="Application.PracticaParcial2 (3)" />
       <item itemvalue="Application.PracticaParcial2" />
       <item itemvalue="Application.Parcial1Hospital (1)" />
-      <item itemvalue="Application.Parcial1Hospital" />
-      <item itemvalue="Application.Parcial1Perrando (1)" />
-      <item itemvalue="Application.Parcial1Perrando (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PracticaParcial2 (1)" />
+        <item itemvalue="Application.PracticaParcial2 (3)" />
+        <item itemvalue="Application.PracticaParcial2 (2)" />
         <item itemvalue="Application.PracticaParcial2" />
         <item itemvalue="Application.Parcial1Hospital (1)" />
-        <item itemvalue="Application.Parcial1Hospital" />
-        <item itemvalue="Application.Parcial1Perrando (2)" />
-        <item itemvalue="Application.Parcial1Perrando (1)" />
       </list>
     </recent_temporary>
   </component>
