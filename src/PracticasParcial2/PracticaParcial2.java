@@ -168,10 +168,39 @@ class Hospital {
         System.out.println("Eliminación exitosa!");
     }
 
+    public void buscarSegunIDyEspecialidad(int id, String especialidad) {
+
+        String consulta = "SELECT * FROM `doctores` WHERE `id` >= '"+id+"' AND `especialidad` LIKE '%"+especialidad+"%'";
+        ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
+
+        if (resultado != null) {
+
+            try {
+                System.out.println("Lista de doctores");
+                System.out.printf("%-10s %-15s %-5s %-20s\n", "ID", "Nombre", "Edad", "Especialidad");
+
+                while(resultado.next()) {
+                    int ide = resultado.getInt("id");
+                    String nombre = resultado.getString("nombre");
+                    int edad = resultado.getInt("edad");
+                    String especialidad1 = resultado.getString("especialidad");
+
+
+                    System.out.printf("%-10d %-15s %-5d %-20s \n", ide, nombre, edad, especialidad1);
+                }
+
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }else {
+            System.out.println("Error, no se recibieron resultados");
+        }
+    }
+
 }
 
 class DBHelper {
-    private static final String URL = "jdbc:mysql://localhost:3306/hospital";
+    private static final String URL = "jdbc:mysql://localhost:3306/hospitalBD";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
@@ -236,7 +265,7 @@ public class PracticaParcial2 {
 
         //hospital.eliminarPaciente("Paciente1");
 
-
+        hospital.buscarSegunIDyEspecialidad(1,"edi");
 
 
 
