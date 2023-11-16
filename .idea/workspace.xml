@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc75940b-5fbc-4a66-a2ed-2ba276ff0b58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PracticasParcial2/PracticaParcial2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PracticasParcial2/PracticaParcial2.java" afterDir="false" />
     </list>
@@ -115,24 +114,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "F:/UTN-LabII-Java",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "settings.editor.splitter.proportion": "0.2925586"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/UTN-LabII-Java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.2925586&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\UTN-LabII-Java\src\BaseDeDatos" />
@@ -141,7 +140,7 @@
       <recent name="E:\UTN-LabII-Java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PracticaParcial2 (3)">
+  <component name="RunManager" selected="Application.SistemaDeVentas">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -149,13 +148,13 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="PracticaParcial2 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
+    <configuration name="SistemaDeVentas (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Parcial2Lab.SistemaDeVentas" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PracticasParcial2.*" />
+          <option name="PATTERN" value="Parcial2Lab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,13 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PracticaParcial2 (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
+    <configuration name="SistemaDeVentas (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Parcial2Lab.SistemaDeVentas" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PracticasParcial2.*" />
+          <option name="PATTERN" value="Parcial2Lab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,13 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PracticaParcial2 (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
+    <configuration name="SistemaDeVentas (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Parcial2Lab.SistemaDeVentas" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PracticasParcial2.*" />
+          <option name="PATTERN" value="Parcial2Lab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,13 +190,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PracticaParcial2 (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
+    <configuration name="SistemaDeVentas (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Parcial2Lab.SistemaDeVentas" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PracticasParcial2.*" />
+          <option name="PATTERN" value="Parcial2Lab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,13 +204,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PracticaParcial2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
+    <configuration name="SistemaDeVentas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Parcial2Lab.SistemaDeVentas" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PracticasParcial2.*" />
+          <option name="PATTERN" value="Parcial2Lab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -251,19 +250,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PracticaParcial2 (3)" />
-      <item itemvalue="Application.PracticaParcial2" />
-      <item itemvalue="Application.PracticaParcial2 (2)" />
-      <item itemvalue="Application.PracticaParcial2 (4)" />
-      <item itemvalue="Application.PracticaParcial2 (5)" />
+      <item itemvalue="Application.SistemaDeVentas" />
+      <item itemvalue="Application.SistemaDeVentas (2)" />
+      <item itemvalue="Application.SistemaDeVentas (3)" />
+      <item itemvalue="Application.SistemaDeVentas (4)" />
+      <item itemvalue="Application.SistemaDeVentas (5)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PracticaParcial2 (3)" />
-        <item itemvalue="Application.PracticaParcial2" />
-        <item itemvalue="Application.PracticaParcial2 (4)" />
-        <item itemvalue="Application.PracticaParcial2 (2)" />
-        <item itemvalue="Application.PracticaParcial2 (5)" />
+        <item itemvalue="Application.SistemaDeVentas" />
+        <item itemvalue="Application.SistemaDeVentas (5)" />
+        <item itemvalue="Application.SistemaDeVentas (4)" />
+        <item itemvalue="Application.SistemaDeVentas (3)" />
+        <item itemvalue="Application.SistemaDeVentas (2)" />
       </list>
     </recent_temporary>
   </component>

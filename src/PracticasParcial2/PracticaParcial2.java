@@ -315,7 +315,7 @@ class Hospital {
 
     }
 
-    public void crearTablaNueva(String nombreTabla) {
+    public void crearTablaNueva(String nombreTabla) { //USAR COMILLAS INVERTIDAS PARA LAS VARIABLES
 
         String consulta = "CREATE TABLE IF NOT EXISTS `" + nombreTabla + "` (" +
                 "id INT NOT NULL AUTO_INCREMENT," +
@@ -327,7 +327,7 @@ class Hospital {
 
     }
 
-    public void eliminarTabla(String nombreTabla) {
+    public void eliminarTabla(String nombreTabla) { //USAR COMILLAS INVERTIDAS PARA LAS VARIABLES
         String consulta = "DROP TABLE IF EXISTS `" + nombreTabla + "`";
 
         DBHelper.ejecutarConsulta(consulta);
