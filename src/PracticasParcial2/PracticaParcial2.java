@@ -1,5 +1,6 @@
 package PracticasParcial2;
 
+import javax.xml.transform.Result;
 import java.sql.*;
 
 class Persona {
@@ -154,7 +155,7 @@ class Hospital {
 
     public void asignarDoctorCabecera(String nombreDoctor, String nombrePaciente) {
 
-        String consulta = "UPDATE pacientes SET doctor = (SELECT id FROM doctores WHERE nombre = '"+nombreDoctor+"') WHERE nombre = '"+nombrePaciente+"'";
+        String consulta = "UPDATE pacientes SET doctor = (SELECT id FROM doctores WHERE nombre = '" + nombreDoctor + "') WHERE nombre = '" + nombrePaciente + "'";
 
         DBHelper.ejecutarConsulta(consulta);
         System.out.println("Doctor asignado correctamente!");
@@ -162,7 +163,7 @@ class Hospital {
 
     public void eliminarPaciente(String nombre) {
 
-        String consulta = "DELETE FROM `pacientes` WHERE `pacientes`.`nombre` = '"+nombre+"'";
+        String consulta = "DELETE FROM pacientes WHERE pacientes.nombre = '"+nombre+"'";
         DBHelper.ejecutarConsulta(consulta);
 
         System.out.println("Eliminación exitosa!");
@@ -195,6 +196,126 @@ class Hospital {
         }else {
             System.out.println("Error, no se recibieron resultados");
         }
+    }
+
+    public void listarDoctores() {
+
+        String consulta = "SELECT * FROM doctores";
+
+        ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
+
+        if (resultado != null) {
+
+            try {
+                System.out.println("Lista de doctores");
+                System.out.printf("%-5s %-12s %-5s %-12s\n","ID","Nombre","Edad","Especialidad");
+                while(resultado.next()) {
+
+                    int identificacion = resultado.getInt("id");
+                    String nomb = resultado.getString("nombre");
+                    int edad = resultado.getInt("edad");
+                    String espec = resultado.getString("especialidad");
+
+                    System.out.printf("%-5d %-12s %-5d %-12s\n",identificacion,nomb,edad,espec);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void encontrarPorHistorialMedico(String palabraClave) {
+
+        String consulta = "SELECT * FROM pacientes WHERE historial_medico LIKE '%"+palabraClave+"%'";
+
+        ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
+
+        listarPacientesGeneral(resultado);
+    }
+
+    public void actualizarEdadDoctor(String nombreDoctor, int edadNueva) {
+
+        String consulta = "UPDATE doctores SET edad = "+edadNueva+" WHERE nombre = '"+nombreDoctor+"'";
+        DBHelper.ejecutarConsulta(consulta);
+        System.out.println("Edad de "+nombreDoctor+" actualizada correctamente!");
+    }
+
+    public void eliminarPacientesAntesDeFecha(String fecha) {
+
+        String consulta = "DELETE FROM pacientes WHERE pacientes.fecha_ingreso <= '"+fecha+"'";
+        DBHelper.ejecutarConsulta(consulta);
+
+        System.out.println("Se han eliminado correctamente los pacientes antes de la fecha: "+fecha);
+
+    }
+
+    public void calcularEdadPromedio() {
+
+        int cont = 0;
+        int promedio = 0;
+
+        String consulta = "SELECT edad FROM pacientes";
+
+        ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
+
+        if (resultado != null) {
+
+            try {
+
+                while(resultado.next()) {
+
+                    int edad = resultado.getInt("edad");
+                    cont++;
+                    promedio += edad;
+                }
+
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
+        promedio = promedio / cont;
+
+        System.out.println("Promedio de edad entre pacientes = "+promedio);
+    }
+
+    public void actualizarEspecialidadSegunEdad(int edadLimite, String nuevaEspecialidad) {
+
+        String consulta = "UPDATE doctores SET especialidad = '"+nuevaEspecialidad+"' WHERE edad > "+edadLimite;
+
+        DBHelper.ejecutarConsulta(consulta);
+    }
+
+    public void contarPacientesPorDoctor(int id) {
+
+        String consulta = "SELECT COUNT(*) AS cantidad_pacientes FROM pacientes WHERE pacientes.doctor = '"+id+"'";
+
+        ResultSet resultado = DBHelper.ejecutarConsultaConResultado(consulta);
+
+        if (resultado != null) {
+
+            try {
+
+                while (resultado.next()) {
+
+                    System.out.println("Cantidad de pacientes del doctor con id: "+id);
+
+                    int result = resultado.getInt("cantidad_pacientes");
+                    System.out.println(result);
+
+                }
+
+
+            } catch (SQLException e) {
+
+                e.printStackTrace();
+            }
+
+
+
+
+        }
+
     }
 
 }
@@ -251,12 +372,18 @@ public class PracticaParcial2 {
         Hospital hospital = new Hospital();
 
         Paciente p1 = new Paciente("Pedro",25,"Cancer",-1,"1999-05-10");
+        Paciente p2 = new Paciente("Juan",18,"Cancer",-1,"1999-05-10");
+        Paciente p3 = new Paciente("Facundo",25,"Sida",-1,"1999-05-10");
+        Paciente p4 = new Paciente("Peruano",30,"Muerto",-1,"1999-05-10");
 
-        //hospital.agregarPaciente(p1);
+//        hospital.agregarPaciente(p1);
+//        hospital.agregarPaciente(p2);
+//        hospital.agregarPaciente(p3);
+//        hospital.agregarPaciente(p4);
 
-        //hospital.listarPacientes();
+//        hospital.listarPacientes();
 
-        //hospital.asignarDoctorCabecera("Doctor2","Juan");
+        //hospital.asignarDoctorCabecera("Doctor1","Paciente2");
 
         //String fechaDesde = "2010-01-01";
         //String fechaHasta = "2010-12-01";
@@ -265,9 +392,20 @@ public class PracticaParcial2 {
 
         //hospital.eliminarPaciente("Paciente1");
 
-        hospital.buscarSegunIDyEspecialidad(1,"edi");
+        //hospital.buscarSegunIDyEspecialidad(1,"edi");
 
+        //hospital.listarDoctores();
 
+        //hospital.encontrarPorHistorialMedico("Sid");
 
+        //hospital.actualizarEdadDoctor("Doctor1",30);
+
+        //hospital.eliminarPacientesAntesDeFecha("2000-01-01");
+
+        //hospital.calcularEdadPromedio();
+
+        //hospital.actualizarEspecialidadSegunEdad(30,"BUEN RETIRO");
+
+        //hospital.contarPacientesPorDoctor(2);
     }
 }
