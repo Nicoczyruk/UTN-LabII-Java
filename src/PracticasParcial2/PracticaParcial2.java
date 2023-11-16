@@ -336,7 +336,7 @@ class Hospital {
 }
 
 class DBHelper {
-    private static final String URL = "jdbc:mysql://localhost:3306/hospitalBD";
+    private static final String URL = "jdbc:mysql://localhost:33061/hospital_bd";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
@@ -395,19 +395,19 @@ public class PracticaParcial2 {
 //        hospital.agregarPaciente(p2);
 //        hospital.agregarPaciente(p3);
 //        hospital.agregarPaciente(p4);
-
+//
 //        hospital.listarPacientes();
 
-        //hospital.asignarDoctorCabecera("Doctor1","Paciente2");
+        //hospital.asignarDoctorCabecera("Doctor1","Juan");
 
-        //String fechaDesde = "2010-01-01";
-        //String fechaHasta = "2010-12-01";
-
-        //hospital.listarPacientesEntreFechas(fechaDesde,fechaHasta);
+//        String fechaDesde = "2010-01-01";
+//        String fechaHasta = "2010-12-01";
+//
+//        hospital.listarPacientesEntreFechas(fechaDesde,fechaHasta);
 
         //hospital.eliminarPaciente("Paciente1");
 
-        //hospital.buscarSegunIDyEspecialidad(1,"edi");
+        //hospital.buscarSegunIDyEspecialidad(1,"card");
 
         //hospital.listarDoctores();
 
