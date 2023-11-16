@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc75940b-5fbc-4a66-a2ed-2ba276ff0b58" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticasParcial2/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticasParcial2/DBHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticasParcial2/Hospital.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticasParcial2/Hospital.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticasParcial2/PracticaParcial2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UTN-LabII-Java/PracticasParcial2/PracticaParcial2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PracticasParcial2/PracticaParcial2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PracticasParcial2/PracticaParcial2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +140,7 @@
       <recent name="E:\UTN-LabII-Java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PracticaParcial2 (5)">
+  <component name="RunManager" selected="Application.PracticaParcial2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -180,20 +176,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PracticaParcial2 (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
-      <module name="UTN-LabII-Java" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="PracticasParcial2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PracticaParcial2 (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
       <module name="UTN-LabII-Java" />
@@ -209,6 +191,20 @@
       </method>
     </configuration>
     <configuration name="PracticaParcial2 (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
+      <module name="UTN-LabII-Java" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PracticasParcial2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticaParcial2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PracticasParcial2.PracticaParcial2" />
       <module name="UTN-LabII-Java" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -254,19 +250,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.PracticaParcial2" />
       <item itemvalue="Application.PracticaParcial2 (2)" />
       <item itemvalue="Application.PracticaParcial2 (4)" />
       <item itemvalue="Application.PracticaParcial2 (5)" />
       <item itemvalue="Application.PracticaParcial2 (1)" />
-      <item itemvalue="Application.PracticaParcial2 (3)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PracticaParcial2 (5)" />
-        <item itemvalue="Application.PracticaParcial2 (2)" />
-        <item itemvalue="Application.PracticaParcial2 (1)" />
-        <item itemvalue="Application.PracticaParcial2 (3)" />
+        <item itemvalue="Application.PracticaParcial2" />
         <item itemvalue="Application.PracticaParcial2 (4)" />
+        <item itemvalue="Application.PracticaParcial2 (2)" />
+        <item itemvalue="Application.PracticaParcial2 (5)" />
+        <item itemvalue="Application.PracticaParcial2 (1)" />
       </list>
     </recent_temporary>
   </component>

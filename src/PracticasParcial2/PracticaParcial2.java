@@ -309,13 +309,28 @@ class Hospital {
             } catch (SQLException e) {
 
                 e.printStackTrace();
+
             }
-
-
-
-
         }
 
+    }
+
+    public void crearTablaNueva(String nombreTabla) {
+
+        String consulta = "CREATE TABLE IF NOT EXISTS `" + nombreTabla + "` (" +
+                "id INT NOT NULL AUTO_INCREMENT," +
+                "nombre VARCHAR(50) NOT NULL," +
+                "edad INT NOT NULL," +
+                "PRIMARY KEY (id)" +
+                ")";
+        DBHelper.ejecutarConsulta(consulta);
+
+    }
+
+    public void eliminarTabla(String nombreTabla) {
+        String consulta = "DROP TABLE IF EXISTS `" + nombreTabla + "`";
+
+        DBHelper.ejecutarConsulta(consulta);
     }
 
 }
@@ -407,5 +422,11 @@ public class PracticaParcial2 {
         //hospital.actualizarEspecialidadSegunEdad(30,"BUEN RETIRO");
 
         //hospital.contarPacientesPorDoctor(2);
+
+        //hospital.crearTablaNueva("Pito");
+
+        //hospital.eliminarTabla("prueba1");
+
+        /* TECLA ASCI PARA HACER ` = ALT + 96 */
     }
 }
